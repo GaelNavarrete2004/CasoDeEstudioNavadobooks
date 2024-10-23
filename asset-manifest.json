@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/CasoDeEstudioNavadobooks/static/css/main.cc691a06.css",
+    "main.js": "/CasoDeEstudioNavadobooks/static/js/main.3cf0a5e9.js",
+    "static/media/header.gif": "/CasoDeEstudioNavadobooks/static/media/header.e2bf89a820403751268c.gif",
+    "static/media/CoverNotAvailable.jpg": "/CasoDeEstudioNavadobooks/static/media/CoverNotAvailable.d9b275a033e34a2695f6.jpg",
+    "static/media/logoIMG.png": "/CasoDeEstudioNavadobooks/static/media/logoIMG.f074577ba11e04fb6b90.png",
+    "static/media/100.webp": "/CasoDeEstudioNavadobooks/static/media/100.c79c804a5bfcd00302c5.webp",
+    "static/media/lord.webp": "/CasoDeEstudioNavadobooks/static/media/lord.77c585dc766062f98432.webp",
+    "index.html": "/CasoDeEstudioNavadobooks/index.html",
+    "static/media/loader.svg": "/CasoDeEstudioNavadobooks/static/media/loader.a3343f12420f3160e32c5317638f2198.svg",
+    "main.cc691a06.css.map": "/CasoDeEstudioNavadobooks/static/css/main.cc691a06.css.map",
+    "main.3cf0a5e9.js.map": "/CasoDeEstudioNavadobooks/static/js/main.3cf0a5e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc691a06.css",
+    "static/js/main.3cf0a5e9.js"
+  ]
+}
