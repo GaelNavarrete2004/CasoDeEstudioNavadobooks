@@ -2,7 +2,7 @@
   "name": "libro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://GaelNavarrete2004.github.io/navadobooks-react",
+  "homepage": "http://GaelNavarrete2004.github.io/CasoDeEstudioNavadobooks",
   "dependencies": {
     "@paypal/react-paypal-js": "^8.7.0",
     "@radix-ui/react-avatar": "^1.1.1",
