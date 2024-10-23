@@ -20,7 +20,7 @@ const SearchForm = () => {
       setSearchTerm(searchText.current.value);
     }
 
-    navigate("/navadobooks-react/book");
+    navigate("/CasoDeEstudioNavadobooks/book");
   };
 
   return (

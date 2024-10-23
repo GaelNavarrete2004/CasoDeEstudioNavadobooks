@@ -91,7 +91,7 @@ const fetchRelatedBooks = async (title) => {
         <button
           type="button"
           className="flex flex-c back-btn"
-          onClick={() => navigate("/navadobooks-react/book")}
+          onClick={() => navigate("/CasoDeEstudioNavadobooks/book")}
         >
           <FaArrowLeft size={22} />
           <span className="fs-18 fw-6">Go Back</span>
@@ -133,7 +133,7 @@ const fetchRelatedBooks = async (title) => {
                 <div
                   className="related-book"
                   key={relatedBook.id}
-                  onClick={() => navigate(`/navadobooks-react/book/${relatedBook.id}`)}
+                  onClick={() => navigate(`/CasoDeEstudioNavadobooks/book/${relatedBook.id}`)}
                 >
                   <img src={relatedBook.cover} alt={relatedBook.title} />
                   <h3>{relatedBook.title}</h3>

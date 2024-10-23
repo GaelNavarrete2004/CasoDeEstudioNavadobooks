@@ -18,15 +18,15 @@ root.render(
   <AppProvider>
     <BrowserRouter>
     <Routes>
-      <Route path="/navadobooks-react" element={<Home />}>
-        <Route path="/navadobooks-react/about" element={<About />} />
-        <Route path="/navadobooks-react/book" element={<Booklist />} />
-        <Route path="/navadobooks-react/book/:id" element={<BookDetails />} />
-        <Route path="/navadobooks-react/profile" element={<UserProfile />} />
-        <Route path="/navadobooks-react/cart" element={<Cart />} />
+      <Route path="/CasoDeEstudioNavadobooks" element={<Home />}>
+        <Route path="/CasoDeEstudioNavadobooks/about" element={<About />} />
+        <Route path="/CasoDeEstudioNavadobooks/book" element={<Booklist />} />
+        <Route path="/CasoDeEstudioNavadobooks/book/:id" element={<BookDetails />} />
+        <Route path="/CasoDeEstudioNavadobooks/profile" element={<UserProfile />} />
+        <Route path="/CasoDeEstudioNavadobooks/cart" element={<Cart />} />
       </Route>
-      <Route path="/navadobooks-react/login" element={<Login />} /> {/* Nueva ruta de login */}
-      <Route path="/navadobooks-react/signup" element={<SignUp />} /> {/* Nueva ruta de registro */}
+      <Route path="/CasoDeEstudioNavadobooks/login" element={<Login />} /> {/* Nueva ruta de login */}
+      <Route path="/CasoDeEstudioNavadobooks/signup" element={<SignUp />} /> {/* Nueva ruta de registro */}
     </Routes>
     </BrowserRouter>
   </AppProvider>

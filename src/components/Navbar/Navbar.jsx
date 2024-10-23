@@ -21,7 +21,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await logout(); // Cierra sesión
-      navigate("/navadobooks-react/login"); // Redirige al login
+      navigate("/CasoDeEstudioNavadobooks/login"); // Redirige al login
     } catch (error) {
       console.error("Error al cerrar sesión:", error);
     }
@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className="navbar" id="navbar">
       <div className="container navbar-content flex">
         <div className="brand-and-toggler flex flex-sb">
-          <Link to="/navadobooks-react/book" className="navbar-brand flex">
+          <Link to="/CasoDeEstudioNavadobooks/book" className="navbar-brand flex">
             <img src={logoIMG} alt="site logo" />
             <span className="text-uppercase fw-7 fs-24 ls-1">NavadoBooks</span>
           </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
-                to="/navadobooks-react/book"
+                to="/CasoDeEstudioNavadobooks/book"
                 className="nav-link text-uppercase text-white fs-22 fw-6 ls-1"
               >
                 Home
@@ -67,7 +67,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
-                to="/navadobooks-react/about"
+                to="/CasoDeEstudioNavadobooks/about"
                 className="nav-link text-uppercase text-white fs-22 fw-6 ls-1"
               >
                 About
@@ -76,7 +76,7 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                to="/navadobooks-react/cart"
+                to="/CasoDeEstudioNavadobooks/cart"
                 className="nav-link text-uppercase text-white fs-22 fw-6 ls-1"
               >
                 <i className="fa-solid fa-cart-shopping"></i>
@@ -99,7 +99,7 @@ const Navbar = () => {
                   {showOptions && (
                     <div className="user-options">
                       <Link
-                        to="/navadobooks-react/profile"
+                        to="/CasoDeEstudioNavadobooks/profile"
                         className="menu-btn"
                       >
                         Ver perfil
@@ -110,7 +110,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 <Link
-                  to="/navadobooks-react/login"
+                  to="/CasoDeEstudioNavadobooks/login"
                   className="nav-link text-uppercase text-white fs-22 fw-6 ls-1"
                 >
                   <i className="fa-solid fa-user"></i>

@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/navadobooks-react/book");
+      navigate("/CasoDeEstudioNavadobooks/book");
     } catch (err) {
       setError("Error al iniciar sesión. Verifica tus datos.");
       console.error(err);
@@ -48,7 +48,7 @@ const Login = () => {
       </form>
       <p className="signup-message">
         ¿Aún no tienes cuenta?{" "}
-        <Link to="/navadobooks-react/signup" className="signup-link">
+        <Link to="/CasoDeEstudioNavadobooks/signup" className="signup-link">
           Regístrate
         </Link>
       </p>

@@ -29,7 +29,7 @@ const SignUp = () => {
       });
 
       // Redireccionar a la página de libros después de registrarse
-      navigate("/navadobooks-react/book");
+      navigate("/CasoDeEstudioNavadobooks/book");
     } catch (err) {
       setError("Error al registrar. Verifica los datos.");
       console.error(err);
