@@ -1,0 +1,45 @@
+.search-form{
+    width: 100%;
+    max-width: 680px;
+}
+
+.search-form-elem{
+    padding: 1.4rem 2.8rem;
+    border-radius: 3.8rem;
+}
+
+.search-form-elem .form-control{
+    font-size: 2rem;
+    padding: 0.6rem;
+}
+
+.search-form-elem .form-control::placeholder{
+    opacity: 0.9;
+}
+
+/* Para pantallas pequeñas, ajusta la búsqueda */
+@media screen and (max-width: 768px) {
+    .search-form {
+      max-width: 100%; /* Asegúrate de que ocupe todo el ancho en pantallas móviles */
+    }
+  
+    .search-form-elem {
+      padding: 1rem 1.5rem; /* Reduce el padding para evitar desbordamientos */
+      border-radius: 2rem; /* Ajusta el borde redondeado */
+    }
+  
+    .search-form-elem .form-control {
+      font-size: 1.6rem; /* Reduce el tamaño del texto */
+      padding: 0.4rem;    /* Reduce el padding para hacer el input más compacto */
+    }
+  
+    .search-form-elem button {
+      padding: 0.5rem;    /* Asegúrate de que el botón también sea más compacto */
+    }
+  
+    .search-form-elem .form-control::placeholder {
+      font-size: 1.4rem;  /* Ajusta el tamaño del placeholder */
+      opacity: 0.8;
+    }
+  }
+  

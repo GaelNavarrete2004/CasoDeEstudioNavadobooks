@@ -1,0 +1,191 @@
+.navbar{
+    padding: 1.8rem 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #121920;
+}
+
+.navbar-brand{
+    width: 90px;
+}  
+
+.navbar-brand span{
+    margin-left: 2rem;
+    color: white;
+}
+
+.brand-and-toggler{
+    width: 100%;
+}
+
+.navbar-content{
+    display: flex;
+    width: 100%;
+}
+
+.navbar-toggler-btn{
+    transition: var(--transition);
+    z-index: 11;
+}
+
+.navbar-collapse{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: var(--black-color);
+    height: 100%;
+    width: 280px;
+    display: flex;
+    padding: 10rem 3rem 0 3rem;
+    transform: translatex(100%);
+    transition: var(--transition);	
+}
+
+.show-navbar-collapse{
+    transform: translateX(0);
+}
+
+.nav-item{
+    margin-bottom: 1.4rem;
+}
+
+.nav-link{
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    color: var(--blue-color);
+}
+
+@media screen and (min-width: 992px){
+    .navbar-collapse{
+        position: relative;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+        transform: translateX(0);
+        justify-content: flex-end;
+    }
+
+    .navbar-toggler-btn{
+        display: none;
+    }
+
+    .nav-item{
+        margin-left: 2.8rem;
+        margin-bottom: 0;
+    }
+
+    .nav-link{
+        color: var(--white-color);
+        font-size: 1.7rem;
+        font-weight: 500!important;
+        opacity: 0.8;
+    }
+
+    .navbar-nav{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .brand-and-toggler {
+      width: 100%;
+      justify-content: space-between; /* Asegura que el logo y el botón hamburguesa estén bien alineados */
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-brand {
+      display: flex;
+      justify-content: flex-start; /* Cambia de "center" a "flex-start" para que el logo se vea en su lugar */
+      align-items: center;
+      gap: 1rem; /* Añade espacio entre el logo y el texto */
+    }
+  
+    .navbar-toggler-btn {
+      position: absolute;
+      right: 1rem; /* Mantén el botón del menú en la esquina derecha */
+      top: 1rem;
+    }
+  
+    .search-form {
+      width: 100%;
+      max-width: none; /* Permite que el formulario ocupe todo el ancho disponible */
+      margin-bottom: 1rem; /* Asegura que haya espacio debajo del formulario */
+    }
+  
+    .search-form-elem {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      padding: 0.8rem 1.2rem;
+    }
+  
+    .search-form-elem .form-control {
+      font-size: 1.4rem;
+      padding: 0.5rem;
+    }
+  
+    .search-form-elem button {
+      padding: 0.4rem;
+    }
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+  
+  .user-email {
+    font-size: 2rem;
+  }
+  
+  .logout-btn {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #ff4c4c;
+  }
+
+  .user-options {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 20;
+  }
+  
+  .menu-btn {
+    padding: 0.5rem 1rem;
+    background-color: #121920;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-btn:hover {
+    background-color: #343a40;
+    cursor: pointer;
+  }
+  

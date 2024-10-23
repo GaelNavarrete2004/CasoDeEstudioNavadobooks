@@ -1,0 +1,114 @@
+.booklist, .book-details {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.booklist-content {
+    display: grid;
+    gap: 2rem; /* Espacio entre los libros */
+    justify-content: center; /* Centrar los elementos */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Acomoda los libros según el tamaño de la pantalla */
+}
+
+.book-item {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px 0px; /* Sombra más suave */
+    transition: var(--transition);
+    text-align: center; /* Centramos el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que los elementos dentro del libro estén centrados */
+}
+
+.book-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px 0px; /* Sombra más profunda al hacer hover */
+}
+
+.book-item-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem; /* Espacio entre la imagen y el resto de la info */
+}
+
+.book-item-info {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.book-item-info-item {
+    margin-bottom: 0.5rem; /* Añadimos algo de espacio entre cada info */
+}
+
+.book-item-info-item.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: #333; /* Color más oscuro y elegante */
+}
+
+.book-item-info-item.author {
+    font-size: 14px;
+    color: #555; /* Color más sutil para el autor */
+}
+
+.book-item-info-item.publish-year {
+    font-size: 12px;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+.book-item-info-item.rating {
+    color: #f39c12;
+    margin-bottom: 1rem;
+}
+
+.book-item-info-item.price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Color más oscuro para dar importancia al precio */
+}
+
+.rating-count {
+    font-size: 12px; /* Tamaño más pequeño */
+    color: #555; /* Color gris oscuro, diferente de las estrellas */
+    margin-left: 0.5rem; /* Espacio entre las estrellas y el número */
+    vertical-align: middle; /* Alineación vertical con las estrellas */
+  }
+
+@media screen and (min-width: 600px) {
+    .booklist-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .booklist-content {
+        grid-template-columns: repeat(4, 1fr); /* Mejor distribución en pantallas grandes */
+    }
+    .book-item-img img {
+        max-height: 180px; /* Ajuste del tamaño de las imágenes en pantallas grandes */
+    }
+}
+
+/* Botón de agregar al carrito */
+.btn-add-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-add-cart:hover {
+    background-color: #45a049;
+  }
+  

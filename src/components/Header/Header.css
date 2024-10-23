@@ -1,0 +1,64 @@
+.header-content {
+  min-height: 70vh;
+  background: linear-gradient(rgba(39, 104, 174, 0.3), rgba(39, 104, 174, 0.5)),
+    url("../../images/header.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 6rem;
+  font-family: "Merriweather", serif;
+  color: white;
+  margin-bottom: 1rem;
+
+}
+
+.header-text {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #ff9900;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #e68a00;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}

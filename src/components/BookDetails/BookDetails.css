@@ -1,0 +1,139 @@
+.book-details {
+    padding: 6rem 0;
+}
+
+.back-btn {
+    margin-left: 20px;
+    margin-bottom: 2.6rem;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    color: var(--blue-color);
+}
+
+.back-btn span {
+    margin-left: 1rem;
+}
+
+.book-details-content {
+    gap: 4rem;
+}
+
+.book-details-img {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.book-details-img img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-details-item {
+    margin-bottom: 1.4rem;
+}
+
+.book-details-item.description {
+    opacity: 0.8;
+}
+
+.book-details-info {
+    overflow-y: scroll;
+    max-height: 600px;
+    padding: 1.4rem;
+}
+
+.book-details-info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.book-details-info::-webkit-scrollbar-track {
+    border-radius: 8px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.book-details-info::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+    outline: -1px solid slategray;
+    border-radius: 8px;
+}
+
+/* Estilos para libros relacionados */
+.related-books {
+    margin-top: 3rem; /* Espacio superior */
+}
+
+.related-books h2 {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+.related-books-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Espacio entre tarjetas */
+}
+
+.related-book {
+    background-color: white; /* Fondo blanco para cada tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para recortar la imagen */
+    transition: transform 0.3s; /* Efecto al pasar el mouse */
+}
+
+.related-book:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+}
+
+.related-book img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Mantener la proporción */
+}
+
+.related-book h3 {
+    font-size: 1rem; /* Tamaño del título del libro */
+    margin: 0.5rem 0; /* Margen superior e inferior */
+    padding: 0 0.5rem; /* Espacio interior */
+}
+
+.related-book p {
+    font-size: 0.9rem; /* Tamaño del texto del autor */
+    margin: 0 0.5rem; /* Margen interior */
+}
+
+.related-books-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas */
+    gap: 1.5rem; /* Espacio entre tarjetas */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .related-books-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .related-books-list {
+        grid-template-columns: 1fr; /* 1 columna para pantallas muy pequeñas */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .book-details-content {
+        grid-template-columns: 40% 60%;
+        gap: 0;
+    }
+
+    .book-details-img {
+        padding: 0 6rem 0 2rem;
+    }
+
+    .book-details-img img {
+        max-width: 100%;
+    }
+}

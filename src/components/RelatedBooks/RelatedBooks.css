@@ -1,0 +1,23 @@
+/* src/components/RelatedBooks/RelatedBooks.css */
+
+.related-books {
+    margin-top: 2rem;
+  }
+  
+  .related-books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .related-book {
+    width: 150px; /* Ajusta según necesites */
+    text-align: center;
+  }
+  
+  .related-book img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,27 @@
+.star-rating {
+    display: flex;
+    align-items: center; /* Asegura que las estrellas y el número estén alineados verticalmente */
+    justify-content: center; /* Alinea el contenido en el centro */
+}
+
+.star {
+    font-size: 1.5rem; /* Tamaño de las estrellas */
+    color: #f39c12; /* Color de estrellas llenas */
+    margin-right: 2px; /* Espacio entre estrellas */
+}
+
+.star.filled i {
+    color: #f39c12; /* Color de estrellas llenas */
+}
+
+.star.half-filled i {
+    color: #f39c12; /* Color de media estrella */
+}
+
+/* Agregar estilos para el rating count */
+.rating-count {
+    font-size: 1.2rem; /* Tamaño más pequeño para el número de votos */
+    color: #555; /* Color gris oscuro, diferente de las estrellas */
+    margin-left: 5px; /* Espacio entre la última estrella y el número de votos */
+    vertical-align: middle; /* Alineación vertical con las estrellas */
+}
